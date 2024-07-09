@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Admin Dashboard</title>
+</head>
+<body>
+    <h1>Admin Dashboard</h1>
+    <h2>Add Attachee</h2>
+    <form method="POST" action="/admin/add">
+        <label>Name:</label><br>
+        <input type="text" name="name"><br>
+        <label>Username:</label><br>
+        <input type="text" name="username"><br>
+        <label>Password:</label><br>
+        <input type="password" name="password"><br>
+        <button type="submit">Add</button>
+    </form>
+    <h2>Attachee List</h2>
+    <ol>
+        {{range .}}
+            <li>{{.Name}} - {{.Username}} - {{.Course }} - {{.RegNumber}} - {{.YearOfStudy}} - {{.Department}} - {{.College}} - {{.MobileNumber}} - {{.AttachmentFrom}} to {{.AttachmentTo}} - {{.SName}} - {{.Sphone}}
+                <form method="POST" action="/admin/delete" style="display:inline;">
+                    <input type="hidden" name="id" value="{{.ID}}">
+                    <button type="submit">Delete</button>
+                </form>
+            </li>
+        {{end}}
+    </ol>
+</body>
+</html>

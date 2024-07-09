@@ -1,0 +1,34 @@
+
+Languages used:
+  1.Golang
+  2.Html
+
+Database used:
+  1. MySQL
+  
+
+admin_username = SCIADMIN
+admin_password = SCI123
+
+The admin creates the log in information of the attachees from the admin dashboard.
+
+After which the attachee can now log in and fill in their details.
+
+On clicking update it clearly indicates the attachee has committed to the policies of the organization us indicated.
+
+The information updated is seen on both admin and attachee databases.
+
+
+
+Features to be put in place:
+1. Air tight security features and authentification.
+2. The frontend aspect of the system (CSS).
+3. Regular adjustments to meet the user's needs.
+4. Hosting it on a domain so as users reach it via a link.
+
+
+
+Developed by:
+                 Byrone Opande
+                 0745130473
+                 Opandebyron2015@gmail.com

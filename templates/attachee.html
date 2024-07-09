@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Attachee Dashboard</title>
+</head>
+<body>
+    <h1>Welcome, {{.Name}}</h1>
+    <h2>Update Your Information.</h2>
+    <form method="POST" action="/attachee/update">
+        <label>Name:</label><br>
+        <input type="text" name="name" value="{{.Name}}" required><br>
+        <label>Reg Number:</label><br>
+        <input type="text" name="reg_number" value="{{.RegNumber}}" required><br>
+        <label>Course:</label><br>
+        <input type="text" name="course" value="{{.Course}}" required><br>
+        <label>Year of Study:</label><br>
+        <input type="text" name="year_of_study" value="{{.YearOfStudy}}" required><br>
+        <label>Department:</label><br>
+        <input type="text" name="department" value="{{.Department}}" required><br>
+        <label>College:</label><br>
+        <input type="text" name="college" value="{{.College}}" required><br>
+        <label>Address:</label><br>
+        <input type="text" name="address" value="{{.Address}}" required><br>
+        <label>Mobile Number:</label><br>
+        <input type="text" name="mobile_number" value="{{.MobileNumber}}" required><br>
+        <label>Attachment Period From:</label><br>
+        <input type="date" name="attachment_from" value="{{.AttachmentFrom}}" required><br>
+        <label>Attachment Period To:</label><br>
+        <input type="date" name="attachment_to" value="{{.AttachmentTo}}" required><br>
+        <label>Lecturer in Charge: </label>
+        <input type="text" name="lecturer_in_charge" value="{{.LecturerInChargeName}}" required><br>
+        <label>Lecturer's Number: </label>
+        <input type="text" name="lecturer's_contact" value="{{.LecturerContact}}" required><br>
+
+        <h2>Parent/Sponsor Details.</h2>
+        <label>Sponsor Name: </label>
+        <input type="text" name="sponsor_name" value="{{.SName}}" required><br>
+        <label>Sponsor Number: </label>
+        <input type="text" name="sponsor_contact" value="{{.Sphone}}" required><br>
+        <label>Sponsor Address: </label>
+        <input type="text" name="sponsor_address" value="{{.SAddress}}" required><br>
+        <label>Sponsor County: </label>
+        <input type="text" name="sponsor_county" value="{{.SCounty}}" required><br>
+        <label>Sponsor Constituency: </label>
+        <input type="text" name="sponsor_constituency" value="{{.SConstituency}}" required><br>
+        
+        <p><strong>By pressing update, I hereby commit that I will adhere to the rules and 
+            regulations regarding attachment at Department of Computing and Informatics - University
+             of Nairobi and accept legal action to be taken against me incase of misconduct or 
+             lawlessness.</strong></p><br>
+    
+
+        
+      <button type="submit">Update</button>
+    </form>
+
+
+    <h2>Your Information</h2>
+    <p><strong>Name: </strong> {{.Name}}</p>
+    <p><strong>Reg Number: </strong> {{.RegNumber}}</p>
+    <p><strong>Course: </strong> {{.Course}}</p>
+    <p><strong>Year of Study: </strong> {{.YearOfStudy}}</p>
+    <p><strong>Department: </strong> {{.Department}}</p>
+    <p><strong>College: </strong> {{.College}}</p>
+    <p><strong>Address: </strong> {{.Address}}</p>
+    <p><strong>Mobile Number: </strong> {{.MobileNumber}}</p>
+    <p><strong>Attachment Period: </strong> {{.AttachmentFrom}} <STRONG>to</STRONG> {{.AttachmentTo}}</p>
+    <p><strong>Lecturer in Charge: </strong>{{.LecturerInChargeName}}</p>
+    <p><strong>Lecturer's Contact: </strong>{{.LecturerContact}}</p>
+
+     <h2> Parent/Sponsor Details</h2>
+    <p><strong>Sponsor Name: </strong> {{.SName}}</p>
+    <p><strong>Address: </strong> {{.SAddress}}</p>
+    <p><strong>Mobile Number: </strong> {{.Sphone}}</p>
+    <p><strong>County: </strong> {{.SCounty}}</p>
+    <p><strong>Constituency: </strong> {{.SConstituency}}</p>
+
+    
+
+</body>
+</html>
